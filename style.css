@@ -1,56 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #F5F7FB;
-    font-family: Inter, sans-serif;
+body {
+  background-color: #f5f7fb;
+  font-family: Inter, sans-serif;
 }
-.card{
-    background-color: #FFFFFF; 
-    width: 600px;
-    min-height: 650px;
-    margin: 80px auto;
-    padding: 40px;
-    border-radius: 20px;
+.card {
+  background-color: #ffffff;
+  width: 600px;
+  min-height: 650px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 20px;
 }
-header{
-    margin-bottom: 30px;
+header {
+  margin-bottom: 30px;
 }
-header h1{
-    margin-bottom: 10px;
+header h1 {
+  margin-bottom: 10px;
 }
-header p{
-    color: #6B7280;
-    font-weight: 100;
+header p {
+  color: #6b7280;
+  font-weight: 100;
 }
-#add-task form{
+#add-task form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+#add-task input {
+  flex: 1;
+  padding: 10px;
+}
+#add-task input:focus {
+  outline: 1px solid #6b7280;
+}
+#add-task button {
+  width: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+#add-task button:hover {
+   background-color: #4F46E5;
+  color: whitesmoke;
+  border-color: #4F46E5;
+}
+#add-task input,
+#add-task button {
+  height: 50px;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+#type{
     display: flex;
     gap: 10px;
-    width: 100%;
+    margin-top: 30px;
 }
-#add-task input{
-    flex: 1;
-    padding: 10px;
-  
+#type button {
+  width: 80px;
+  height: 35px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  cursor: pointer;
 }
-#add-task input:focus{
-    outline: 1px solid #6B7280;
-  
+#type button:hover {
+  background-color: #4F46E5;
+  color: whitesmoke;
+  border-color: #4F46E5;
 }
-#add-task button{
-    width: 50px;
-    font-size: 24px;
-    cursor: pointer;
-}
-#add-task button:hover{
-   background-color: #6B7280;
-   color: whitesmoke;
-}
-#add-task input, #add-task button{
-    height: 50px;
-    border-radius: 12px;
-    background-color: #F9FAFB;
-    border: 1px solid #E5E7EB;
+#type .active{
+    background-color: #4F46E5;
+    color: whitesmoke;
+    border-color: #4F46E5;
 }
