@@ -16,7 +16,7 @@
         </header>
         <main>
             <section id="add-task">
-                <form>
+                <form id="task-form">
                     <input type="text" class="add-input" id="add-task-input" placeholder="Add a new task..." required>
                     <button type="submit" id="add-btn">+</button>
                 </form>
@@ -27,7 +27,7 @@
                 <button>Completed</button>
             </section>
             <section id="task-list">
-                <ul>
+                <ul id="task-container">
                     <li>
                         <input type="checkbox">
                         <span>Learn JavaScript DOM</span>
@@ -54,6 +54,9 @@
             </section>
         </main>
     </div>
+    <footer>
+        <script src="script.js"></script>
+    </footer>
 </body>
 
 </html>
