@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Todo</title>
 </head>
+
 <body>
     <div class="card">
         <header>
@@ -15,16 +17,43 @@
         <main>
             <section id="add-task">
                 <form>
-                <input type="text" class="add-input" id="add-task-input" placeholder="Add a new task..." required>
-                <button type="submit" id="add-btn">+</button>
+                    <input type="text" class="add-input" id="add-task-input" placeholder="Add a new task..." required>
+                    <button type="submit" id="add-btn">+</button>
                 </form>
             </section>
-            <section id="type">
+            <section id="filter-buttons">
                 <button class="active">All</button>
                 <button>Active</button>
                 <button>Completed</button>
             </section>
+            <section id="task-list">
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        <span>Learn JavaScript DOM</span>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </li>
+
+                    <li>
+                        <input type="checkbox">
+                        <span>Build Portfolio Website</span>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" checked>
+                        <span>Solve LeetCode Problems</span>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </li>
+                </ul>
+
+                <p id="task-count">3 tasks remaining</p>
+            </section>
         </main>
     </div>
 </body>
+
 </html>
