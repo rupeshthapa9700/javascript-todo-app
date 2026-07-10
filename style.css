@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5F7FB;
+    font-family: Inter, sans-serif;
+}
+.card{
+    background-color: #FFFFFF; 
+    width: 600px;
+    min-height: 650px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+header{
+    margin-bottom: 30px;
+}
+header h1{
+    margin-bottom: 10px;
+}
+header p{
+    color: #6B7280;
+    font-weight: 100;
+}
+#add-task form{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+#add-task input{
+    flex: 1;
+    padding: 10px;
+  
+}
+#add-task input:focus{
+    outline: 1px solid #6B7280;
+  
+}
+#add-task button{
+    width: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#add-task button:hover{
+   background-color: #6B7280;
+   color: whitesmoke;
+}
+#add-task input, #add-task button{
+    height: 50px;
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+}
