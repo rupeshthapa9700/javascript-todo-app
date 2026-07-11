@@ -23,3 +23,4 @@ taskContainer.addEventListener("click", (event) => {
         event.target.parentElement.remove();
     }
 });
+console.log("Just a push");
