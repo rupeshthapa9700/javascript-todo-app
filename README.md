@@ -8,33 +8,33 @@ TaskFlow helps users organize daily tasks by allowing them to create, edit, comp
 
 ## 🚀 Features
 
-* ✅ Add new tasks
-* ✅ Prevent empty tasks
-* ✅ Remove extra spaces from tasks
-* ✅ Edit existing tasks
-* ✅ Save edited tasks with Enter key
-* ✅ Cancel editing with Escape key
-* ✅ Mark tasks as completed
-* ✅ Delete tasks
-* ✅ Filter tasks:
+- ✅ Add new tasks
+- ✅ Prevent empty tasks
+- ✅ Remove extra spaces from tasks
+- ✅ Edit existing tasks
+- ✅ Save edited tasks with Enter key
+- ✅ Cancel editing with Escape key
+- ✅ Mark tasks as completed
+- ✅ Delete tasks
+- ✅ Filter tasks:
+  - All tasks
+  - Active tasks
+  - Completed tasks
 
-  * All tasks
-  * Active tasks
-  * Completed tasks
-* ✅ Clear completed tasks
-* ✅ Task counter
-* ✅ Empty state message
-* ✅ Data persistence using LocalStorage
-* ✅ Fully responsive design
+- ✅ Clear completed tasks
+- ✅ Task counter
+- ✅ Empty state message
+- ✅ Data persistence using LocalStorage
+- ✅ Fully responsive design
 
 ---
 
 ## 🛠️ Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript (ES6)
-* LocalStorage API
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- LocalStorage API
 
 ---
 
@@ -98,12 +98,12 @@ Add your screenshot here:
 
 Possible improvements:
 
-* Dark mode
-* Drag and drop task ordering
-* Task categories
-* Due dates and reminders
-* Backend database integration
-* User authentication
+- Dark mode
+- Drag and drop task ordering
+- Task categories
+- Due dates and reminders
+- Backend database integration
+- User authentication
 
 ---
 
@@ -111,13 +111,13 @@ Possible improvements:
 
 While building this project, I practiced:
 
-* DOM manipulation
-* Event handling
-* Dynamic HTML creation
-* JavaScript arrays and objects
-* LocalStorage management
-* Responsive CSS design
-* Managing application state
+- DOM manipulation
+- Event handling
+- Dynamic HTML creation
+- JavaScript arrays and objects
+- LocalStorage management
+- Responsive CSS design
+- Managing application state
 
 ---
 
@@ -135,4 +135,5 @@ https://github.com/rupeshthapa9700
 This project is open-source and available under the MIT License.
 
 ```
+
 ```
