@@ -183,3 +183,37 @@ header p {
     }
 
 }
+#empty-message{
+    text-align:center;
+    color:#6B7280;
+    margin-top:30px;
+}
+#clear-completed{
+    margin-top:20px;
+    padding:10px 20px;
+    border-radius:12px;
+    border:none;
+    background-color:#EF4444;
+    color:white;
+    cursor:pointer;
+}
+
+#clear-completed:hover{
+    opacity:0.8;
+}
+.edit-input{
+    flex:1;
+    height:35px;
+    padding:8px 12px;
+    border-radius:10px;
+    border:1px solid #e5e7eb;
+    background-color:#f9fafb;
+    font-size:14px;
+}
+
+.edit-input:focus{
+    outline:1px solid #4F46E5;
+}
+.edit-btn.save{
+    color:#10B981;
+}

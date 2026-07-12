@@ -4,10 +4,16 @@ const taskContainer = document.querySelector("#task-container");
 const taskCount = document.querySelector("#task-count");
 const filterButtons = document.querySelectorAll("#filter-buttons button");
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+const emptyMessage = document.querySelector("#empty-message");
+const clearCompletedBtn = document.querySelector("#clear-completed");
 
 taskForm.addEventListener("submit", (event) => {
   event.preventDefault();
-
+const taskText = taskInput.value.trim();
+if(taskText === ""){
+    alert("⚠ Please add a task");
+    return;
+}
   const task = {
     id: Date.now(),
     text: taskInput.value,
@@ -30,23 +36,37 @@ taskContainer.addEventListener("click", (event) => {
 
     if (event.target.textContent === "Edit") {
       const input = document.createElement("input");
+      
       input.type = "text";
       input.value = taskText.textContent;
       input.classList.add("edit-input");
 
       li.replaceChild(input, taskText);
+        input.focus();
 
+input.setSelectionRange(
+    input.value.length,
+    input.value.length
+);
       event.target.textContent = "Save";
+      event.target.classList.add("save");
     } else {
 
     const input = li.querySelector(".edit-input");
+
+    const updatedText = input.value.trim();
+
+    if(updatedText === ""){
+        alert("Task cannot be empty");
+        return;
+    }
 
     const id = Number(li.dataset.id);
 
     tasks = tasks.map(function(task){
 
         if(task.id === id){
-            task.text = input.value;
+            task.text = updatedText;
         }
 
         return task;
@@ -57,6 +77,7 @@ taskContainer.addEventListener("click", (event) => {
 
     renderTasks();
 
+    updateTaskCount();
 }
   }
 
@@ -172,7 +193,12 @@ function saveTasks(){
 function renderTasks(){
 
     taskContainer.innerHTML = "";
-
+ if(tasks.length === 0){
+        emptyMessage.style.display = "block";
+    }
+    else{
+        emptyMessage.style.display = "none";
+    }
     tasks.forEach(function(task){
 
         const li = document.createElement("li");
@@ -192,5 +218,20 @@ function renderTasks(){
     });
 
 }
+clearCompletedBtn.addEventListener("click", function(){
+
+    tasks = tasks.filter(function(task){
+
+        return !task.completed;
+
+    });
+
+    saveTasks();
+
+    renderTasks();
+
+    updateTaskCount();
+
+});
 renderTasks();
 updateTaskCount();
